@@ -1,0 +1,29 @@
+<div id="keys" style="display: none">
+    <h4 class="title has-text-centered">Wallet</h4>
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label">Username</label>
+        </div>
+        <input class="input" id="username" type="text" value="" readonly>
+    </div>
+    <div class="field">
+        <label for="public_key" class="label">Public Key</label>
+        <textarea class="textarea" id="public_key" rows="5" placeholder="0xpublic_key" readonly></textarea>
+    </div>
+    <div class="field">
+        <label for="private_key" class="label">Private Key</label>
+        <textarea class="textarea" id="private_key" rows="5" placeholder="0xprivate_key" readonly></textarea>
+    </div>
+    <article class="message is-danger" style="margin-top: 16px">
+        <div class="message-header">
+            <p>Important</p>
+            <button class="delete" aria-label="delete"></button>
+        </div>
+        <div class="message-body">
+            <ul>
+                <li>Save your private and public keys. These keys cannot be recovered!</li>
+                <li>Don't share your private key with anyone!</li>
+            </ul>
+        </div>
+    </article>
+</div>

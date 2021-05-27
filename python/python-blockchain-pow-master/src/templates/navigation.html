@@ -1,0 +1,47 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/" style="padding-right: 4px">
+            <p class="subtitle">PyBlock</p>
+        </a>
+        <div class="navbar-item" style="padding: 4px">
+            <div class="buttons">
+                <a class="button is-primary" id="mine">
+                    <strong>Mine</strong>
+                </a>
+            </div>
+        </div>
+        <div class="navbar-item" style="padding: 4px">
+            <div class="buttons">
+                <a class="button is-primary" id="sync">
+                    <strong>Sync</strong>
+                </a>
+            </div>
+        </div>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+           data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div class="navbar-menu" id="navbarBasicExample">
+        <div class="navbar-start">
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary" onclick="window.location.pathname = '/nodes'">
+                        <strong>Nodes</strong>
+                    </a>
+                    <a class="button is-primary" onclick="window.location.pathname = '/wallet'">
+                        <strong>Wallet</strong>
+                    </a>
+                    <a class="button is-primary" onclick="window.location.pathname = '/message/send'">
+                        <strong>Send</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

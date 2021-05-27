@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container" style="margin-top: 16px">
+    <div class="card-content">
+        <form class="form" id="register_node_form">
+            <h4 class="title has-text-centered">Register Nodes</h4>
+            <div class="field">
+                <label class="label">Enter Node's URLs</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Node's URLs separated with comma (,)" name="nodes"
+                           required>
+                </div>
+            </div>
+            <div class="field">
+                <div class="is-flex" style="justify-content: center">
+                    <button class="button is-primary control" id="register_node">Register Node</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="card" style="margin: 16px;">
+        <div class="card-content">
+            <div class="is-flex" style="justify-content: space-between">
+                <p class="title">Nodes Registered</p>
+                <button type="submit" id="refresh_nodes" class="button is-primary">
+                    <i class="fa fa-refresh"></i>
+                </button>
+            </div>
+            <div id="nodes">
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="/static/js/register_node.js" type="text/javascript"></script>
+{% endblock %}

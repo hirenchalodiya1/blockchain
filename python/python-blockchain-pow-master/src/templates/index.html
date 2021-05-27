@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container" style="margin-top: 16px">
+    <div class="card" style="margin: 16px;">
+        <div class="card-content">
+            <div class="content">
+                <div class="title">Welcome to the world of blockchain</div>
+                <ul style="margin-left: 16px">
+                    <li style="padding-left: 16px">Create a wallet for you using the wallet generator</li>
+                    <li style="padding-left: 16px">Send messages to the blockchain forum</li>
+                    <li style="padding-left: 16px">Mine the transactions of messages</li>
+                </ul>
+            </div>
+        </div>
+        <footer class="card-footer is-hidden-mobile">
+            <a href="/nodes" class="card-footer-item button is-primary">Nodes</a>
+            <a href="/wallet" class="card-footer-item button is-primary">Create Wallet</a>
+            <a href="/message/send" class="card-footer-item button is-primary">Send Message</a>
+        </footer>
+        <footer class="card-footer is-hidden-tablet is-flex" style="flex-direction: column;">
+            <a href="/nodes/register" class="card-footer-item button is-primary">Nodes</a>
+            <a href="/wallet" class="card-footer-item button is-primary" style="margin-top: 4px;">Create Wallet</a>
+            <a href="/message/send" class="card-footer-item button is-primary" style="margin-top: 4px;">Send Message</a>
+        </footer>
+    </div>
+
+    <hr>
+
+    <div class="card" style="margin: 16px;">
+        <div class="card-content">
+            <div class="is-flex" style="justify-content: space-between">
+                <p class="title">Message Forum</p>
+                <button type="submit" id="refresh_messages" class="button is-primary">
+                    <i class="fa fa-refresh"></i>
+                </button>
+            </div>
+            <div id="message_forum">
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="/static/js/index.js" type="text/javascript"></script>
+{% endblock %}
